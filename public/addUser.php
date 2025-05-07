@@ -32,7 +32,8 @@ if (isset($_POST['send'])){
 <form action="" method="post">
     <h1>Ajouter Un utilisateur</h1>
     <input type="text" name="username" placeholder="username">
-    <input type="email" name="email" placeholder="email">
+    <input type="email" name="email" placeholder="email" pattern="^[a-z0-9]+\.[a-z0-9]+@noogle\.sn$"
+    title="Format attendu : prenom.nom@noogle.sn (lettres et chiffres autorisés)" required>
     <input type="submit" value="Ajouter" name="send">
     <a href="index.php" class="link back">Annuler</a>
 </form>
