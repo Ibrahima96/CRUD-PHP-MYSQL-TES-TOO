@@ -25,7 +25,7 @@ if (isset($_POST['send'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>ADDUSER</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
