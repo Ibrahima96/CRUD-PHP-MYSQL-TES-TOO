@@ -27,7 +27,7 @@ if (isset($_POST['send'])) {
         $stm->execute(['username' => $username, 'email' => $email, 'user_id' => $_GET['id']]);
 
         // Redirection vers la page d'affichage des utilisateurs
-        header('Location: showUser.php');
+        header('Location: index.php');
         exit;
     } else {
         echo "Veuillez remplir tous les champs";
@@ -49,7 +49,7 @@ if (isset($_POST['send'])) {
     <input type="text" name="username" placeholder="username" value="<?php echo $user['username'] ?>">
     <input type="email" name="email" placeholder="email" value="<?php echo $user['email'] ?>">
     <input type="submit" value="Modifier" name="send">
-    <a href="showUser.php" class="link back">Annuler</a>
+    <a href="index.php" class="link back">Annuler</a>
 </form>
 </body>
 </html>

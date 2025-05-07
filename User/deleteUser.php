@@ -19,4 +19,4 @@ $stm = $pdo->prepare("DELETE FROM users WHERE user_id = :user_id");
 $stm->execute(['user_id' => $user_id]);
 
 // Redirection vers la page d'affichage des utilisateurs
-header('Location: showUser.php');
+header('Location: index.php');

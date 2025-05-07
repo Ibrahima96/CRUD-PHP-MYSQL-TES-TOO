@@ -6,7 +6,7 @@ if (isset($_POST['send'])){
         $email = $_POST['email'];
         $stm = $pdo->prepare("INSERT INTO users (username, email) VALUES (:username, :email)");
         $stm->execute(['username' => $username, 'email' => $email]);
-        header('Location: showUser.php');
+        header('Location: index.php');
         exit;
     }
     else{
@@ -32,7 +32,7 @@ if (isset($_POST['send'])){
     <input type="text" name="username" placeholder="username">
     <input type="email" name="email" placeholder="email">
     <input type="submit" value="Ajouter" name="send">
-    <a href="showUser.php" class="link back">Annuler</a>
+    <a href="index.php" class="link back">Annuler</a>
 </form>
 </body>
 </html>
