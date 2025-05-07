@@ -8,7 +8,8 @@
  */
 
 // Inclusion du fichier de connexion à la base de données
-include_once __DIR__ . '/../connect_ddb.php';
+include_once 'connect_ddb.php';
+
 
 
 // Récupération des informations de l'utilisateur

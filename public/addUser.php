@@ -1,5 +1,6 @@
 <?php
-include_once __DIR__ . '/../connect_ddb.php';
+include_once 'connect_ddb.php';
+
 
 if (isset($_POST['send'])){
     if (!empty($_POST['username']) && !empty($_POST['email'])){
