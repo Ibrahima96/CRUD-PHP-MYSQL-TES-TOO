@@ -6,7 +6,8 @@
  */
 
 // Inclusion du fichier de connexion à la base de données
-include_once '../connect_ddb.php';
+include_once __DIR__ . '/../connect_ddb.php';
+
 
 // Préparation de la requête pour sélectionner tous les utilisateurs
 $stm = $pdo->prepare("SELECT * FROM users");

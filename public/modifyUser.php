@@ -8,7 +8,8 @@
  */
 
 // Inclusion du fichier de connexion à la base de données
-include_once '../connect_ddb.php';
+include_once __DIR__ . '/../connect_ddb.php';
+
 
 // Récupération des informations de l'utilisateur
 $stm = $pdo->prepare("SELECT * FROM users WHERE user_id = :user_id");
