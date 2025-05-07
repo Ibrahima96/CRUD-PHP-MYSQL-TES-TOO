@@ -1,6 +1,9 @@
 # Utiliser l'image officielle PHP avec Apache
 FROM php:8.2-apache
 
+# Correct
+RUN docker-php-ext-install mysqli pdo_mysql
+
 # Copier les fichiers du projet dans le dossier HTML d'Apache
 COPY ./public /var/www/html
 
