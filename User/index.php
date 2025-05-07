@@ -1,4 +1,4 @@
-<?php
+:<?php
 /**
  * Fichier de gestion de l'affichage des utilisateurs
  *
@@ -75,9 +75,9 @@ $message = "<p class='message'>Pas de données disponibles</p>";
                     </td>
                 </tr>
             <?php endforeach; ?>
-        <?php
-        // Si le tableau est vide, on affiche un message
-        else: ?>
+        
+         <!-- Si le tableau est vide, on affiche un message -->
+        <?php else: ?>
             <tr>
                 <td colspan="4"><?= $message ?></td>
             </tr>
